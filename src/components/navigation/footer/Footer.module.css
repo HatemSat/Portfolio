@@ -1,8 +1,14 @@
 .Footer{
-    border-top: 1px solid black;
-    background-color: lightblue;
+    border-top: 1px solid orange;
+    /* background-color: black; */
     bottom: 0;
     position: absolute;
     width: 100%;
     height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Footer a{
+    text-decoration: none;
 }

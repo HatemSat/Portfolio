@@ -1,4 +1,3 @@
-# Portfolio
 
 :uk: Here you can find some of my works | Created with React.Js
 
