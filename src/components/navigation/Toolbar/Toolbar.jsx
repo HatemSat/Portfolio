@@ -15,7 +15,7 @@ const Toolbar = (props) => {
                 <nav>
                     <ul>
                         <Link to="/">Home</Link>
-                        <Link to="/">Projects</Link>
+                        <Link to="/projects">Projects</Link>
                         <Link to="/">Resume</Link>
                         <Link to="/contact">Contact</Link>
                         {/* <li>Blog</li> */}

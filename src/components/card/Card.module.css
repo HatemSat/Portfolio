@@ -1,0 +1,117 @@
+/* .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+}
+
+.Card a {
+}
+
+.Card img {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.Image {
+}
+
+.Text {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+} */
+
+.Card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    font-family: roboto;
+    text-align: center;
+    /* --- */
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.Image {
+    grid-area: image;
+}
+
+.Text {
+    grid-area: text;
+}
+
+.Icons {
+    grid-area: stats;
+}
+
+.Image {
+    grid-area: image;
+    background: url("../../assets/images/moon.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.Text {
+    grid-area: text;
+    margin: 25px;
+    color: rgb(255, 7, 110);
+}
+
+.Text .Date {
+    color: rgb(255, 7, 110);
+    font-size: 13px;
+}
+
+.Text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.Text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+    color: black;
+}
+
+.Icons {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255, 7, 110);
+}
+.Icons img{
+    width: 50px;
+    opacity: 0.9;
+}
+
+.Icons .Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+
+.Card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}

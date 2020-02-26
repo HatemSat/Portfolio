@@ -4,19 +4,19 @@ import linkedin from '../../assets/images/linkedin.svg'
 import github from '../../assets/images/github.svg'
 import resume from '../../assets/images/resume.jpg'
 import javascript from '../../assets/images/javascript.jpg'
-import Thumbnail from '../thumbnail/Thumbnail'
+import Card from '../card/Card'
 
 export const Home = (props) => {
     return (
         <div className={classes.Home}>
             <div>
-                <Thumbnail title='My projects'></Thumbnail>
-                <Thumbnail title='Resume'></Thumbnail>
+                <Card title='My projects'></Card>
+                <Card title='Resume'></Card>
             </div>
-            <div>
+            {/* <div>
                 <img src={linkedin}></img>
                 <img src={github}></img>
-            </div>
+            </div> */}
         </div>
     )
 }

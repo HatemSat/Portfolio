@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Contact from '../../components/contact/Contact';
 import Footer from '../../components/navigation/footer/Footer';
+import Projects from '../../components/projects/Projects';
 
 export default class Layout extends Component {
     render() {
@@ -14,8 +15,11 @@ export default class Layout extends Component {
             <div className={classes.Layout} >
                 <Toolbar> </Toolbar>
                 <Switch>
-                <Route path="/" exact>
+                    <Route path="/" exact>
                         <Home />
+                    </Route>
+                    <Route path="/projects">
+                        <Projects />
                     </Route>
                     <Route path="/contact">
                         <Contact />
