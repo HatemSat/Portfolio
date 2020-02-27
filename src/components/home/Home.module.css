@@ -3,19 +3,127 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 80%;
-}
-
-.Home>div {
-    display: flex;
-    justify-content: space-around;
-    /* width: 200px;  */
-    /* width: 500px; */
-    width: 50%;
+    /* height: 80%; */
+    width: 100vw;
     margin: auto;
 }
 
-.Home img {
-    width: 50px;
+.MainSection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 90vh;
+    /* border-bottom: 1px solid black; */
+}
+
+.GithubIconContainer {
+    height: 50%;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.GithubIconContainer h2 {
+    font-family: 'Ubuntu Condensed' ;
+    margin: 5px;
+    font-size: 1.7rem;
+    letter-spacing: 0.05rem;
+}
+.GithubIconContainer h3 {
+    font-family: 'Amatic SC' ;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.GithubIcon {
+    /* width: 5%; */
+    width: 5rem;
+}
+
+.GithubIcon img {
+    width: 100%;
+}
+.GithubIcon img:hover {
+    animation: focus ease-in-out 1s infinite alternate forwards;
+}
+
+.DownArrowContainer {
+    height: 30%;
+    display: flex;
+    width: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.DownArrow {
+    cursor: pointer;
+    width: 50%;
+    /* transition: all 0.3s ease-in-out; */
+    position: relative;
+    animation: slideDown ease-in-out 1s infinite alternate forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.DownArrow:hover {
+    animation-play-state: paused;
+}
+
+.DownArrow:active {}
+
+@keyframes slideDown {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+
+@keyframes focus {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.MainCard {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.MainCard::after {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    background-image: url('../../assets/images/computer.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.MainCard:hover {
     opacity: 0.8;
+}
+
+.MainCard>h2 {
+    color: red;
+}
+
+.ProjectSection {
+    width: 100%;
 }

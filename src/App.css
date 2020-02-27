@@ -1,22 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Noto+Sans|Roboto|Ubuntu+Condensed&display=swap');
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    /* color: white; */
     /* font-family: 'Roboto'; */
     /* font-family: 'Open Sans' ; */
     /* font-family: 'Lato', ; */
+
+    /* outline: 1px solid red; */
+
     font-family: 'Open Sans', sans-serif;
 }
-body{
-    background-color: rgba(0, 0, 255, 0.342);
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* background-color: rgba(0, 0, 255, 0.342); */
+    /* background-color: #393d3f; */
+    /* background: url('./assets/images/forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7; */
+    background-color: #fdfdff;
+    box-sizing: border-box;
     /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     background-size: auto;
     background-repeat: no-repeat; */
 }
+
+/* body:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./assets/images/forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    opacity : 0.5;
+    z-index: -1;
+} */
+
 #root {
     /* background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%); */
     /* background-image: url('./assets/images/moon.jpg');
     background-size: cover; */
     /* background-color: black;
     z-index: 0;    */
+    /* height: 100%; */
+    overflow-x: hidden;
 }

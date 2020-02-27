@@ -32,7 +32,7 @@
 .Card {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 80px;
+    grid-template-rows: 170px 170px 80px;
     grid-template-areas: "image" "text" "stats";
     border-radius: 18px;
     background: white;
@@ -68,16 +68,18 @@
 .Text {
     grid-area: text;
     margin: 25px;
-    color: rgb(255, 7, 110);
+    color: white;
+    background-color: #393d3f;
+    margin: 0;
 }
 
 .Text .Date {
-    color: rgb(255, 7, 110);
+    color: white;
     font-size: 13px;
 }
 
 .Text p {
-    color: grey;
+    color: white;
     font-size: 15px;
     font-weight: 300;
 }
@@ -85,7 +87,7 @@
 .Text h2 {
     margin-top: 0px;
     font-size: 28px;
-    color: black;
+    color: white;
 }
 
 .Icons {
@@ -95,7 +97,7 @@
     grid-template-rows: 1fr;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: rgb(255, 7, 110);
+    background: #a6b1e1;
 }
 .Icons img{
     width: 50px;
@@ -112,6 +114,6 @@
 }
 
 .Card:hover {
-    transform: scale(1.15);
+    transform: scale(1.03);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
