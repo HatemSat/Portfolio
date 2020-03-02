@@ -22,7 +22,7 @@
 .GithubIconContainer {
     height: 50%;
     display: flex;
-    width: 40%;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;

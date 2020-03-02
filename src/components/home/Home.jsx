@@ -1,12 +1,12 @@
 import React from 'react'
 import classes from './Home.module.css'
-import linkedin from '../../assets/images/linkedin.svg'
+// import linkedin from '../../assets/images/linkedin.svg'
 import github1 from '../../assets/images/github1.svg'
-import github2 from '../../assets/images/github2.svg'
+// import github2 from '../../assets/images/github2.svg'
 import arrow from '../../assets/images/DownArrow.svg'
-import resume from '../../assets/images/resume.jpg'
-import javascript from '../../assets/images/javascript.jpg'
-import Card from '../card/Card'
+// import resume from '../../assets/images/resume.jpg'
+// import javascript from '../../assets/images/javascript.jpg'
+// import Card from '../card/Card'
 import Projects from '../projects/Projects'
 
 
@@ -27,14 +27,14 @@ export const Home = (props) => {
             <div className={classes.MainSection}>
                 {/* <h1>Welcome</h1> */}
                 <div className={classes.GithubIconContainer}>
-                    <a className={classes.GithubIcon} target="_blank" href='https://github.com/HatemSat'>
-                        <img src={github1}></img>
+                    <a className={classes.GithubIcon} rel="noopener noreferrer" target="_blank" href='https://github.com/HatemSat'>
+                        <img alt="Github Icon" src={github1}></img>
                     </a>
                     <h2>Hatem Satouri</h2>
                     <h3>Full-stack Developer</h3>
                 </div>
                 <div className={classes.DownArrowContainer}>
-                    <img onClick={arrowClickHandler} className={classes.DownArrow} src={arrow}></img>
+                    <img alt="Down Arrow" onClick={arrowClickHandler} className={classes.DownArrow} src={arrow}></img>
                 </div>
             </div>
 

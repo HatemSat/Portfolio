@@ -16,6 +16,9 @@
 }
 
 .Toolbar {
+    z-index: 5;
+    width: 100%;
+    position: fixed;
     justify-content: flex-end;
     align-content: center;
     display: flex;
@@ -31,6 +34,12 @@
     width: 40%;
     display: flex;
     align-items: center;
+}
+
+@media (max-width:499px) {
+    .Toolbar nav {
+        display: none;
+    }
 }
 
 .Toolbar nav ul {

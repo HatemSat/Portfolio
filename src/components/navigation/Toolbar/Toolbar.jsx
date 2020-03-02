@@ -9,7 +9,7 @@ const Toolbar = (props) => {
             <header className={classes.Toolbar}>
             <div className={classes.Logo}>
                 <Link to='/'>
-                    <img src={logo}></img>
+                    <img alt="Website Logo" src={logo}></img>
                 </Link>
             </div>
                 <nav>

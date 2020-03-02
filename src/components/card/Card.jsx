@@ -1,8 +1,5 @@
 import React from 'react'
 import classes from './Card.module.css'
-import { Link } from 'react-router-dom'
-import resume from '../../assets/images/resume.jpg'
-import javascript from '../../assets/images/javascript.jpg'
 import github from '../../assets/images/github.svg'
 import view from '../../assets/images/view.svg'
 
@@ -21,10 +18,10 @@ const Card = (props) => {
             </div>
             <div className={classes.Icons}>
                 <div className={classes.Icon}>
-                    <img src={view}></img>
+                    <img alt="Eye Icon" src={view}></img>
                 </div>
                 <div className={classes.Icon}>
-                    <img src={github}></img>
+                    <img alt="Github Icon" src={github}></img>
                 </div>
             </div>
         </div>
