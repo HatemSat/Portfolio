@@ -18,13 +18,11 @@ export const Home = (props) => {
             top: 800,
             left: 0,
             behavior: 'smooth'
-          });
+        });
     }
     return (
         <main className={classes.Home}>
-
-
-            <div className={classes.MainSection}>
+            <section className={classes.MainSection}>
                 {/* <h1>Welcome</h1> */}
                 <div className={classes.GithubIconContainer}>
                     <a className={classes.GithubIcon} target="_blank" href='https://github.com/HatemSat'>
@@ -36,12 +34,13 @@ export const Home = (props) => {
                 <div className={classes.DownArrowContainer}>
                     <img onClick={arrowClickHandler} className={classes.DownArrow} src={arrow}></img>
                 </div>
-            </div>
-
-
-            <div className={classes.ProjectSection}>
+            </section>
+            <section className={classes.ProjectSection}>
                 <Projects></Projects>
-            </div>
+            </section>
+
+            <section style={{ margin: '50px' }}>About me</section>
+
         </main>
     )
 }

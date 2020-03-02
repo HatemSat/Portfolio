@@ -8,25 +8,37 @@ import {
 import Contact from '../../components/contact/Contact';
 import Footer from '../../components/navigation/footer/Footer';
 import Projects from '../../components/projects/Projects';
+import eng from '../../assets/translations/eng.json';
+import fr from '../../assets/translations/fr.json';
+
+const langaugeContext = React.createContext(eng);
 
 export default class Layout extends Component {
+
+    state = {
+        context: fr
+    }
+
     render() {
         return (
-            <div className={classes.Layout} >
-                <Toolbar> </Toolbar>
-                <Switch>
-                    <Route path="/" exact>
-                        <Home />
-                    </Route>
-                    <Route path="/projects">
-                        <Projects />
-                    </Route>
-                    <Route path="/contact">
-                        <Contact />
-                    </Route>
-                </Switch>
-                <Footer></Footer>
-            </div>
+            <langaugeContext.Provider>
+                <div className={classes.Layout} >
+                    <Toolbar context={this.state.context}> </Toolbar>
+                    <Switch>
+                        <Route path="/" exact>
+                            <Home />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact />
+                        </Route>
+                    </Switch>
+                    <Footer></Footer>
+                </div>
+            </langaugeContext.Provider>
+
         )
     }
 }

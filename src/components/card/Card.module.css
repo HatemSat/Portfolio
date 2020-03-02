@@ -69,12 +69,13 @@
     grid-area: text;
     margin: 25px;
     color: white;
-    background-color: #393d3f;
+    /* background-color: #393d3f; */
+    background-color: #82735c;
     margin: 0;
 }
 
 .Text .Date {
-    color: white;
+    color: black;
     font-size: 13px;
 }
 
@@ -114,6 +115,6 @@
 }
 
 .Card:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }

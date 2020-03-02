@@ -8,6 +8,8 @@ const Projects = () => {
             <Card title='My projects'></Card>
             <Card title='Resume'></Card>
             <Card title='Resume'></Card>
+            <Card title='Resume'></Card>
+            <Card title='Resume'></Card>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import classes from './Card.module.css'
-import { Link } from 'react-router-dom'
-import resume from '../../assets/images/resume.jpg'
-import javascript from '../../assets/images/javascript.jpg'
+// import { Link } from 'react-router-dom'
+// import resume from '../../assets/images/resume.jpg'
+// import javascript from '../../assets/images/javascript.jpg'
 import github from '../../assets/images/github.svg'
 import view from '../../assets/images/view.svg'
 
