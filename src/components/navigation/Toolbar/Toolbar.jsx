@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import logo from '../../../assets/images/spiral.svg'
 
 const Toolbar = (props) => {
+    const languageTogglerHandler = () => { 
+        alert('workin')
+    }
+
     return (
         <div>
             <header className={classes.Toolbar}>
@@ -18,6 +22,7 @@ const Toolbar = (props) => {
                         <Link to="/projects">Projects</Link>
                         <Link to="/">Resume</Link>
                         <Link to="/contact">Contact</Link>
+                        <Link onClick={languageTogglerHandler}>{props.context.Home}</Link>
                         {/* <li>Blog</li> */}
                     </ul>
                 </nav>
