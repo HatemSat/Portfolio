@@ -8,18 +8,23 @@ import Footer from '../../components/navigation/footer/Footer';
 import Projects from '../../components/projects/Projects';
 import eng from '../../assets/translations/eng.json';
 import fr from '../../assets/translations/fr.json';
+import { LanguageContext } from '../../components/context/context'
 
-const langaugeContext = React.createContext(eng);
 
 export default class Layout extends Component {
 
-    state = {
-        context: fr
+    toggleLanguage = () => {
+        this.setState({ lang: this.state.lang === fr ? eng : fr })
     }
 
+    state = {
+        lang: eng,
+        toggleLanguage: this.toggleLanguage
+    }
     render() {
+        console.log(eng)
         return (
-            <langaugeContext.Provider>
+            <LanguageContext.Provider value={this.state}>
                 <div className={classes.Layout} >
                     <Toolbar context={this.state.context}> </Toolbar>
                     <Switch>
@@ -35,7 +40,7 @@ export default class Layout extends Component {
                     </Switch>
                     <Footer></Footer>
                 </div>
-            </langaugeContext.Provider>
+            </LanguageContext.Provider>
 
         )
     }
