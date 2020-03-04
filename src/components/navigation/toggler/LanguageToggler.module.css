@@ -9,4 +9,9 @@
     margin-left: 10px;
     cursor: pointer;
     position: relative;
+    transition: 0.5s;
+}
+
+.White {
+    opacity: 0.9;
 }

@@ -2,6 +2,7 @@
     margin-right: auto;
     margin-left: 5%;
     display: flex;
+    transition: 3s linear;
 }
 
 .Logo a {
@@ -10,7 +11,21 @@
 }
 
 .Logo img {
-    width: 30px;
+    position: relative;
+    width: 40px;
+}
+
+.Logo img:hover {
+    animation: rotating 20s ease-out infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.1);
+    }
 }
 
 .Toolbar {
@@ -28,7 +43,7 @@
     width: 100%;
     /* position: fixed; */
     border-bottom: 1px solid black;
-    border-bottom-left-radius: 20px;
+    /* border-bottom-left-radius: 20px; */
     background-color: #c6c5b9;
 }
 
@@ -67,12 +82,13 @@
     font-weight: 600;
     padding: 10 20px;
     position: relative;
-    transition: 0.05s all ease-in-out;
+    transition: 0.00s all ease-in-out;
 }
 
 .Toolbar nav ul a:hover {
     color: #edfff1;
 }
+
 /* 
 @keyframes fadeIn {
     0% {

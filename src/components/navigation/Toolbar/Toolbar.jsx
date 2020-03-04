@@ -32,10 +32,7 @@ const Toolbar = (props) => {
                 </Aux >
             )}
         </LanguageContext.Consumer>
-
     )
-
-
 
 }
 

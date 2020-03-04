@@ -10,20 +10,26 @@ export const LanguageToggler = (props) => {
     const onEnter = () => {
         document.querySelector(`.${classes.Language} > a`).style.color = '#edfff1'
         document.querySelector('.Black').style.display = 'none'
-        document.querySelector('.White').style.display = 'block'
+        document.querySelector(`.${classes.White}`).style.display = 'block'
+        document.querySelector(`.${classes.White}`).classList.add(classes.WhiteApp)
     }
     const onLeave = () => {
         document.querySelector(`.${classes.Language} > a`).style.color = 'black'
         document.querySelector('.Black').style.display = 'block'
-        document.querySelector('.White').style.display = 'none'
+        document.querySelector(`.${classes.White}`).style.display = 'none'
     }
 
     return (
         <Aux>
             <li onMouseEnter={onEnter} onMouseLeave={onLeave} className={classes.Language}>
                 <Link to="#" onClick={props.changeLanguage}>{props.language === "English" ? "Français" : "English"}</Link>
-                <img className="Black" src={lang} alt="Language icon" />
-                <img className="White" style={{ display: 'none' }} src={langColored} alt="Language icon" />
+                <img onClick={props.changeLanguage} className="Black" src={lang} alt="Language icon" />
+                <img
+                    className={classes.White}
+                    onClick={props.changeLanguage}
+                    style={{ display: 'none' }}
+                    src={langColored}
+                    alt="Language icon" />
             </li>
         </Aux>
     )

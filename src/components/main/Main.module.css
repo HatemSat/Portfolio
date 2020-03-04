@@ -1,0 +1,83 @@
+.GithubIconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 65%;
+    width: 50%;
+}
+
+.GithubIconContainer h2 {
+    font-family: 'Ubuntu Condensed';
+    margin: 5px;
+    font-size: 1.7rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
+.GithubIconContainer h3 {
+    font-family: 'Amatic SC';
+    /* font-size: 1.5rem; */
+    font-size: 2rem;
+    /* letter-spacing: 0.05rem; */
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+
+@media (max-width:499px){
+    .GithubIconContainer {
+        width: 80%;
+    }
+}
+
+.GithubIcon {
+    width: 5rem;
+}
+
+.GithubIcon img {
+    width: 100%;
+}
+
+.GithubIcon img:hover {
+    animation: focus ease-in-out 1s infinite alternate forwards;
+}
+
+.DownArrowContainer {
+    height: 30%;
+    display: flex;
+    width: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.DownArrow {
+    cursor: pointer;
+    /* width: 50%; */
+    width: 2rem;
+    /* transition: all 0.3s ease-in-out; */
+    position: relative;
+    animation: upDownAnimation ease-in-out 1s infinite alternate forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.DownArrow:hover {
+    animation-play-state: paused;
+}
+
+.DownArrow:active {}
+
+@keyframes upDownAnimation {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+
+@keyframes focus {
+    50% {
+        transform: scale(1.1);
+    }
+}

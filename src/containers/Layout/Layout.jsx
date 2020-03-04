@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import classes from './Layout.module.css'
-import Toolbar from '../../components/navigation/Toolbar/Toolbar'
+import Toolbar from '../../components/navigation/toolbar/Toolbar'
 import { Home } from '../../components/home/Home'
 import { Switch, Route } from "react-router-dom";
 import Contact from '../../components/contact/Contact';
