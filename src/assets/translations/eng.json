@@ -1,6 +1,8 @@
 {
+    "Language":"English",
     "Home": "Home",
     "Projects": "Projects",
     "Resume": "Resume",
-    "Contact": "Contact"
+    "Contact": "Contact",
+    "Developer":"Full-Stack Developer"
 }

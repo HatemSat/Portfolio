@@ -8,7 +8,7 @@ import Footer from '../../components/navigation/footer/Footer';
 import Projects from '../../components/projects/Projects';
 import eng from '../../assets/translations/eng.json';
 import fr from '../../assets/translations/fr.json';
-import { LanguageContext } from '../../components/context/context'
+import { LanguageContext } from '../../context/context'
 
 
 export default class Layout extends Component {
@@ -22,7 +22,7 @@ export default class Layout extends Component {
         toggleLanguage: this.toggleLanguage
     }
     render() {
-        console.log(eng)
+        // console.log(eng)
         return (
             <LanguageContext.Provider value={this.state}>
                 <div className={classes.Layout} >

@@ -1,0 +1,12 @@
+.Language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Language img {
+    width: 1.2rem;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}

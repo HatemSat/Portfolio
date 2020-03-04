@@ -2,17 +2,17 @@ import React from 'react'
 import classes from './Toolbar.module.css'
 import { Link } from "react-router-dom";
 import logo from '../../../assets/images/spiral.svg'
-import { LanguageContext } from '../../context/context';
+import { LanguageContext } from '../../../context/context';
+import Aux from '../../../hoc/auxilliary/Auxilliary';
+import { LanguageToggler } from '../toggler/LanguageToggler';
+
 
 const Toolbar = (props) => {
-    const languageTogglerHandler = () => {
-        alert('workin')
-    }
 
     return (
         <LanguageContext.Consumer>
             {({ lang, toggleLanguage }) => (
-                <div>
+                <Aux>
                     <header className={classes.Toolbar}>
                         <div className={classes.Logo}>
                             <Link to='/'>
@@ -21,20 +21,22 @@ const Toolbar = (props) => {
                         </div>
                         <nav>
                             <ul>
-                                <Link to="/">{lang.Home}</Link>
-                                <Link to="/projects">{lang.Projects}</Link>
-                                <Link to="/">{lang.Resume}</Link>
-                                <Link to="/contact">{lang.Contact}</Link>
-                                <Link onClick={toggleLanguage}>lang</Link>
-                                {/* <li>Blog</li> */}
+                                <li><Link to="/">{lang.Home}</Link></li>
+                                <li><Link to="/projects">{lang.Projects}</Link></li>
+                                <li><Link to="/">{lang.Resume}</Link></li>
+                                <li><Link to="/contact">{lang.Contact}</Link></li>
+                                <LanguageToggler changeLanguage={toggleLanguage} language={lang.Language}></LanguageToggler>
                             </ul>
                         </nav>
                     </header>
-                </div>
+                </Aux >
             )}
         </LanguageContext.Consumer>
 
     )
+
+
+
 }
 
 export default Toolbar

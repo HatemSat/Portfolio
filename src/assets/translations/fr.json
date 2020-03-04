@@ -1,6 +1,8 @@
 {
+    "Language":"Français",
     "Home": "Acceuil",
     "Projects": "Projets",
     "Resume": "CV",
-    "Contact": "Contact"
+    "Contact": "Contact",
+    "Developer":"Developpeur Full-Stack"
 }

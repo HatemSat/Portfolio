@@ -5,7 +5,7 @@ import classes from './Card.module.css'
 // import javascript from '../../assets/images/javascript.jpg'
 import github from '../../assets/images/github.svg'
 import view from '../../assets/images/view.svg'
-import { LanguageContext } from '../../components/context/context'
+import { LanguageContext } from '../../context/context'
 
 const Card = (props) => {
 
