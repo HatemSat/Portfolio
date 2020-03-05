@@ -23,7 +23,7 @@ const Toolbar = (props) => {
                             <ul>
                                 <li><Link to="/">{lang.Home}</Link></li>
                                 <li><Link to="/projects">{lang.Projects}</Link></li>
-                                <li><Link to="/">{lang.Resume}</Link></li>
+                                <li><Link to="/resume">{lang.Resume}</Link></li>
                                 <li><Link to="/contact">{lang.Contact}</Link></li>
                                 <LanguageToggler changeLanguage={toggleLanguage} language={lang.Language}></LanguageToggler>
                             </ul>

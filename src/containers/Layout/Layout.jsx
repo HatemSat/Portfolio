@@ -9,6 +9,7 @@ import Projects from '../../components/projects/Projects';
 import eng from '../../assets/translations/eng.json';
 import fr from '../../assets/translations/fr.json';
 import { LanguageContext } from '../../context/context'
+import Resume from '../../components/resume/Resume';
 
 
 export default class Layout extends Component {
@@ -33,6 +34,9 @@ export default class Layout extends Component {
                         </Route>
                         <Route path="/projects">
                             <Projects />
+                        </Route>
+                        <Route path="/resume">
+                            <Resume />
                         </Route>
                         <Route path="/contact">
                             <Contact />

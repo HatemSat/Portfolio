@@ -1,0 +1,14 @@
+.ResumeContainer {
+    width: 80vw;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.Picture{
+    margin: 5% 0;
+    width: 50%;
+}
