@@ -19,13 +19,18 @@
 
 .ProjectSection {
     width: 100%;
-    background-color: #d7ebba;
+    /* background-color: #d7ebba; */
+    /* background-color: #a8e4ff; */
+    background-image: url('../../assets/images/rectangle.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .AboutSection {
     height: 90vh;
     width: 100%;
-    background-color: #9ad2cb;
+    /* background-color: #a8e4ff; */
+    background-color: #b6ea67;
 
 }
 

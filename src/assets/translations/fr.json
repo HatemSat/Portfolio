@@ -4,5 +4,8 @@
     "Projects": "Projets",
     "Resume": "CV",
     "Contact": "Contact",
-    "Developer":"Developpeur Full-Stack"
+    "Developer":"Developpeur Full-Stack",
+    "Flowbow":{
+        "Description":"Site vitrine pour une startup dans le domaine des ressources humaines"
+    }
 }

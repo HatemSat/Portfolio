@@ -32,7 +32,8 @@
 .Card {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 170px 170px 80px;
+    /* grid-template-rows: 150px 170px 80px; */
+    grid-template-rows: 150px 80px 80px;
     grid-template-areas: "image" "text" "stats";
     border-radius: 18px;
     background: white;
@@ -59,19 +60,25 @@
 
 .Image {
     grid-area: image;
-    background: url("../../assets/images/moon.jpg");
+    /* background: url("../../assets/images/moon.jpg"); */
+    /* background: url("../../assets/gif/flow.gif"); */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .Text {
     grid-area: text;
     margin: 25px;
-    color: white;
+    color: black;
     /* background-color: #393d3f; */
-    background-color: #82735c;
+    background-color: #c6c5b9;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Text .Date {
@@ -80,7 +87,7 @@
 }
 
 .Text p {
-    color: white;
+    color: black;
     font-size: 15px;
     font-weight: 300;
 }
@@ -98,7 +105,7 @@
     grid-template-rows: 1fr;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: #a6b1e1;
+    background: #c6c5b9;
 }
 .Icons img{
     width: 50px;

@@ -8,7 +8,7 @@ import { LanguageContext } from '../../context/context'
 const Main = () => {
     const arrowClickHandler = (e) => {
         window.scrollTo({
-            top: 800,
+            top: 600,
             left: 0,
             behavior: 'smooth'
         });

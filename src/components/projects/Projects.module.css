@@ -2,11 +2,10 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    /* width: 200px;  */
-    /* width: 500px; */
     width: 70%;
-    /* margin-top: 50px; */
     margin: 50px auto;
     margin-bottom: 200px;
     flex-wrap: wrap;
+    /* background-color: #a8e4ff; */
+
 }

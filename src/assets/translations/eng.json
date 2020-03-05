@@ -4,5 +4,8 @@
     "Projects": "Projects",
     "Resume": "Resume",
     "Contact": "Contact",
-    "Developer":"Full-Stack Developer"
+    "Developer":"Full-Stack Developer",
+    "Flowbow":{
+        "Description":"A showcase website for a startup in the human ressources field"
+    }
 }
