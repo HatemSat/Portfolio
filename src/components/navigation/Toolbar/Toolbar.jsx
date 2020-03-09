@@ -6,7 +6,6 @@ import { LanguageContext } from '../../../context/context';
 import Aux from '../../../hoc/auxilliary/Auxilliary';
 import { LanguageToggler } from '../toggler/LanguageToggler';
 
-
 const Toolbar = (props) => {
 
     return (

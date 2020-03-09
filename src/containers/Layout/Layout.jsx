@@ -10,7 +10,7 @@ import eng from '../../assets/translations/eng.json';
 import fr from '../../assets/translations/fr.json';
 import { LanguageContext } from '../../context/context'
 import Resume from '../../components/resume/Resume'
-
+import { CSSTransition, TransitionGroup, } from 'react-transition-group';
 
 export default class Layout extends Component {
 
@@ -27,25 +27,37 @@ export default class Layout extends Component {
         return (
             <LanguageContext.Provider value={this.state}>
                 <div className={classes.Layout} >
-                    <Toolbar context={this.state.context}> </Toolbar>
-                    <Switch>
-                        <Route path="/" exact>
-                            <Home />
-                        </Route>
-                        <Route path="/projects">
-                            <Projects />
-                        </Route>
-                        <Route path="/resume">
-                            <Resume />
-                        </Route>
-                        <Route path="/contact">
-                            <Contact />
-                        </Route>
-                    </Switch>
+
+                    <Toolbar context={this.state.context} />
+                    <Route render={({ location }) => (
+
+                        <TransitionGroup>
+                            <CSSTransition
+                                key={location.key}
+                                timeout={650}
+                                classNames="fade">
+                                <Switch location={location}>
+                                    <Route path="/" exact>
+                                        <Home />
+                                    </Route>
+                                    <Route path="/projects">
+                                        <Projects />
+                                    </Route>
+                                    <Route path="/resume">
+                                        <Resume />
+                                    </Route>
+                                    <Route path="/contact">
+                                        <Contact />
+                                    </Route>
+                                </Switch>
+
+                            </CSSTransition>
+                        </TransitionGroup>
+                    )} />
+
                     <Footer></Footer>
                 </div>
             </LanguageContext.Provider>
-
         )
     }
 }

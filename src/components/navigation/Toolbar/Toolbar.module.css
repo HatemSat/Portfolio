@@ -32,7 +32,7 @@
     display: flex;
     align-content: center;
     justify-content: flex-end;
-    position: fixed;
+    position: absolute;
     z-index: 5;
     /* padding: 1% 0; */
     padding: 10px 0;
@@ -40,8 +40,10 @@
     /* height: 2rem; */
     /* height: auto; */
     height: 5vh;
+
     width: 100%;
-    /* position: fixed; */
+    position: relative;
+
     border-bottom: 1px solid black;
     /* border-bottom-left-radius: 20px; */
     background-color: #c6c5b9;
@@ -83,6 +85,7 @@
     padding: 10 20px;
     position: relative;
     transition: 0.00s all ease-in-out;
+    letter-spacing: 1px;
 }
 
 .Toolbar nav ul a:hover {

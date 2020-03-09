@@ -9,7 +9,6 @@ const Resume = (props) => {
             <div className={classes.ResumeContainer}>
                 <img className={classes.Picture} alt="Resume" src={ResumePicture}></img>
             </div>
-
         </Aux>
     )
 }

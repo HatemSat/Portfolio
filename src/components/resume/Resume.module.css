@@ -1,10 +1,12 @@
 .ResumeContainer {
-    width: 80vw;
+    width: 100vw;
     /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
+    position: relative;
+    margin-top: 5vh;
 }
 
 
