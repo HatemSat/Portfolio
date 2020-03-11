@@ -8,7 +8,9 @@ import langColored from '../../../assets/images/lang-white.svg'
 export const LanguageToggler = (props) => {
 
     const onEnter = () => {
-        document.querySelector(`.${classes.Language} > a`).style.color = '#edfff1'
+        // color: #9c9c9c;
+        // document.querySelector(`.${classes.Language} > a`).style.color = '#edfff1'
+        document.querySelector(`.${classes.Language} > a`).style.color = '#9c9c9c'
         document.querySelector('.Black').style.display = 'none'
         document.querySelector(`.${classes.White}`).style.display = 'block'
         document.querySelector(`.${classes.White}`).classList.add(classes.WhiteApp)

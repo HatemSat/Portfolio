@@ -18,17 +18,8 @@ body {
 
 #root {
     z-index: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
-
-/* 
-.switch-wrapper {
-    position: relative;
-  }
-  
-  .switch-wrapper > div {
-    position: absolute;
-  } */
 
 /* Router Transitions : */
 

@@ -3,9 +3,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     margin: auto;
-    /* position: absolute; */
+    position: absolute;
 }
 
 .MainSection {

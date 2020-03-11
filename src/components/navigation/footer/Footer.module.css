@@ -1,23 +1,22 @@
-.Footer{
+.Footer {
     border-top: 1px solid black;
     /* background-color: black; */
     background-color: #c6c5b9;
-    left: 0;
-    bottom: 0;
-
-    position: relative;
-
+    /* left: 0;
+    bottom: 0; */
+    /* position: relative; */
+    position: absolute;
     width: 100%;
     height: 3vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.Footer a{
+
+.Footer a {
     text-decoration: none;
-
 }
-.Footer p{
-    color: black;
 
+.Footer p {
+    color: black;
 }

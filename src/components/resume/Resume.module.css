@@ -1,16 +1,21 @@
 .ResumeContainer {
-    width: 100vw;
+    /* width: 100vw; */
+    width: 100%;
     /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    position: relative;
+
+
+    /* position: relative; */
+    position: absolute;
+    /* top: 100px;
+    left:0; */
     margin-top: 5vh;
 }
 
-
-.Picture{
+.Picture {
     margin: 5% 0;
     width: 50%;
 }

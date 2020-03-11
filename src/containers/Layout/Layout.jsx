@@ -31,7 +31,7 @@ export default class Layout extends Component {
                     <Toolbar context={this.state.context} />
                     <Route render={({ location }) => (
 
-                        <TransitionGroup>
+                        <TransitionGroup component={null}>
                             <CSSTransition
                                 key={location.key}
                                 timeout={650}
@@ -50,12 +50,10 @@ export default class Layout extends Component {
                                         <Contact />
                                     </Route>
                                 </Switch>
-
                             </CSSTransition>
                         </TransitionGroup>
                     )} />
-
-                    <Footer></Footer>
+                    {/* <Footer></Footer> */}
                 </div>
             </LanguageContext.Provider>
         )
