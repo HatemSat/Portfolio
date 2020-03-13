@@ -1,0 +1,33 @@
+.Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.Footer a {
+    margin: 0 5% 5% 0;
+}
+
+.Footer img {
+    width: 50px;
+}
+
+.Footer p {
+    margin: 0 auto 3% 5%;
+}
+
+@media (max-width:499px) {
+    .Footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 9%;
+    }
+    .Footer a {
+        margin: 2%;
+    }
+    .Footer p {
+        margin: 2%;
+    }
+}

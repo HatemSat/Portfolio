@@ -1,11 +1,36 @@
 {
-    "Language":"English",
-    "Home": "Home",
-    "Projects": "Projects",
-    "Resume": "Resume",
-    "Contact": "Contact",
-    "Developer":"Full-Stack Developer",
-    "Flowbow":{
-        "Description":"A showcase website for a startup in the human ressources field"
+    "language": "English",
+    "toolbar": {
+        "title": "Home",
+        "projects": "Projects",
+        "resume": "Resume",
+        "contact": "Contact"
+    },
+    "home": {
+        "developer": "Full-Stack Developer"
+    },
+    "projects": {
+        "card": {
+            "website": "View Website",
+            "code": "View Code"
+        },
+        "flowbow": {
+            "description": "A showcase website for a startup in the human ressources field"
+        }
+    },
+    "about": {
+        "title": "About me",
+        "description": "Curieux de nature, j’aime toucher à tout. Je me passionne particulièrement pour les art visuels et les technologies du web. Chaque aspect de la création d’une application est important. Je peux vous aider à faire évoluer vos produits et intervenir autant sur des problèmatiques back-end que front-end.",
+        "stack": {
+            "tools": "Tools & Software",
+            "frameworks": "Frameworks & Librairies",
+            "languages": "Languages",
+            "cloud": "Cloud & Deployment"
+        }
+    },
+    "contact": {
+        "call": "Leave me a message",
+        "name": "Name",
+        "send":"Send"
     }
 }

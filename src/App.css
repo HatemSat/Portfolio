@@ -29,9 +29,8 @@ body {
 
 .fade-enter-active {
     opacity: 1;
-    /* transition: opacity 500ms ease-in; */
-    /* transition: opacity 300ms linear 150ms; */
-    transition: opacity 300ms ease-in-out 150ms;
+    /* transition: opacity 300ms ease-in-out 150ms; */
+    transition: opacity 300ms ease-in-out;
 }
 
 .fade-exit {
@@ -42,4 +41,9 @@ body {
     opacity: 0;
     /* transition: opacity 150ms linear; */
     transition: opacity 150ms ease-in-out;
+}
+
+a:active, a:focus {
+    outline: 0;
+    border: none;
 }

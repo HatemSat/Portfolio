@@ -1,0 +1,43 @@
+.Contact {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.Contact form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.Contact input, textarea {
+    padding: 1%;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid black;
+    font: 1rem 'Roboto Mono';
+}
+
+.Contact input:focus, textarea:focus {
+    border: 1px solid rgb(0, 72, 255);
+}
+
+.Button button {
+    align-self: flex-end;
+    width: 20%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 1px;
+    font: 0.8rem 'Roboto Mono';
+}
+
+@media (max-width:499px) {
+    .Contact {
+        width: 80%;
+    }
+    .Button button {
+        width: 60%;
+    }
+}

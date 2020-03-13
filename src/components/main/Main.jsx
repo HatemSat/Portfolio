@@ -23,7 +23,7 @@ const Main = () => {
                                 <img alt="Github Icon" src={github1}></img>
                             </a>
                             <h2>Hatem Satouri</h2>
-                            <h3>{lang.Developer}</h3>
+                            <h3>{lang.home.developer}</h3>
                         </div>
                         <div className={classes.DownArrowContainer}>
                             <img alt="Down Arrow" onClick={arrowClickHandler} className={classes.DownArrow} src={arrow}></img>

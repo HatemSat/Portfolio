@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
-import classes from './Layout.module.css'
-import Toolbar from '../../components/navigation/toolbar/Toolbar'
-import { Home } from '../../components/home/Home'
 import { Switch, Route } from "react-router-dom";
+import classes from './Layout.module.css'
+import { CSSTransition, TransitionGroup, } from 'react-transition-group';
+import Toolbar from '../../components/navigation/toolbar/Toolbar'
 import Contact from '../../components/contact/Contact';
-import Footer from '../../components/navigation/footer/Footer';
+import Home from '../../components/home/Home'
 import Projects from '../../components/projects/Projects';
+import Resume from '../../components/resume/Resume'
 import eng from '../../assets/translations/eng.json';
 import fr from '../../assets/translations/fr.json';
 import { LanguageContext } from '../../context/context'
-import Resume from '../../components/resume/Resume'
-import { CSSTransition, TransitionGroup, } from 'react-transition-group';
 
 export default class Layout extends Component {
 
@@ -19,7 +18,7 @@ export default class Layout extends Component {
     }
 
     state = {
-        lang: eng,
+        lang: fr,
         toggleLanguage: this.toggleLanguage
     }
     render() {

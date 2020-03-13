@@ -1,0 +1,73 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    height: 100%;
+}
+
+.About h2, h3, p {
+    font-family: 'Roboto Mono';
+}
+.About h2{
+    font-size: 1.3rem;
+
+}
+.About p{
+    font-size: 0.9rem;
+
+}
+
+.Title {}
+
+.Title h2 {
+    margin-left: 5%;
+}
+
+.Description {
+    width: 35%;
+    align-self: flex-end;
+    margin: 5% 20% 10%;
+    border: 1px solid black;
+    padding: 1.5%;
+}
+
+.Description p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.Stack {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    margin: 0 5% 0 5%;
+}
+
+.Stack div {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.Stack div h3{
+    margin-bottom: 5px;
+}
+@media (max-width:499px) {
+    .Title {
+        align-self: center;
+    }
+    .Title h2 {
+        margin-left: 0%;
+    }
+    .Description {
+        align-self: center;
+        width: 80%;
+    }
+    .Stack {
+        flex-direction: column;
+    }
+    .Stack div h3{
+        margin-bottom: 2%;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

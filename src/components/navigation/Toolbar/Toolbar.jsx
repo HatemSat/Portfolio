@@ -20,11 +20,11 @@ const Toolbar = (props) => {
                         </div>
                         <nav>
                             <ul>
-                                <li><Link to="/">{lang.Home}</Link></li>
-                                <li><Link to="/projects">{lang.Projects}</Link></li>
-                                <li><Link to="/resume">{lang.Resume}</Link></li>
-                                <li><Link to="/contact">{lang.Contact}</Link></li>
-                                <LanguageToggler changeLanguage={toggleLanguage} language={lang.Language}></LanguageToggler>
+                                <li><Link to="/">{lang.toolbar.home}</Link></li>
+                                <li><Link to="/projects">{lang.toolbar.projects}</Link></li>
+                                <li><Link to="/resume">{lang.toolbar.resume}</Link></li>
+                                <li><Link to="/contact">{lang.toolbar.contact}</Link></li>
+                                <LanguageToggler changeLanguage={toggleLanguage} language={lang.language}></LanguageToggler>
                             </ul>
                         </nav>
                     </header>
