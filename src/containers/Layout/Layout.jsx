@@ -10,16 +10,25 @@ import Resume from '../../components/resume/Resume'
 import eng from '../../assets/translations/eng.json';
 import fr from '../../assets/translations/fr.json';
 import { LanguageContext } from '../../context/context'
+import HamburgerMenu from '../../components/navigation/hamburger-menu/HamburgerMenu';
+import ScrollTop from '../../components/navigation/scroll-top/ScrollTop';
 
 export default class Layout extends Component {
 
     toggleLanguage = () => {
         this.setState({ lang: this.state.lang === fr ? eng : fr })
     }
-
+    toggleBurger = () => {
+        // this.setState({ isBurgerOpen: true })
+        this.setState((prevState) => {
+            return { isBurgerOpen: !prevState.isBurgerOpen }
+        })
+    }
     state = {
         lang: fr,
-        toggleLanguage: this.toggleLanguage
+        toggleLanguage: this.toggleLanguage,
+        isBurgerOpen: false,
+        toggleBurger: this.toggleBurger
     }
     render() {
         // console.log(eng)
@@ -27,7 +36,8 @@ export default class Layout extends Component {
             <LanguageContext.Provider value={this.state}>
                 <div className={classes.Layout} >
 
-                    <Toolbar context={this.state.context} />
+                    <Toolbar />
+                    <HamburgerMenu />
                     <Route render={({ location }) => (
 
                         <TransitionGroup component={null}>
@@ -36,18 +46,22 @@ export default class Layout extends Component {
                                 timeout={650}
                                 classNames="fade">
                                 <Switch location={location}>
-                                    <Route path="/" exact>
-                                        <Home />
-                                    </Route>
-                                    <Route path="/projects">
-                                        <Projects />
-                                    </Route>
-                                    <Route path="/resume">
-                                        <Resume />
-                                    </Route>
-                                    <Route path="/contact">
-                                        <Contact />
-                                    </Route>
+                                    <ScrollTop>
+
+                                        <Route path="/" exact>
+                                            <Home />
+                                        </Route>
+                                        <Route path="/projects">
+                                            <Projects />
+                                        </Route>
+                                        <Route path="/resume">
+                                            <Resume />
+                                        </Route>
+                                        <Route path="/contact">
+                                            <Contact />
+                                        </Route>
+                                    </ScrollTop>
+
                                 </Switch>
                             </CSSTransition>
                         </TransitionGroup>

@@ -16,11 +16,20 @@
         },
         "flowbow": {
             "description": "Site vitrine pour une startup dans le domaine des ressources humaines"
+        },
+        "snake": {
+            "description": "Prototype de snake multijoueur ou le serpent à très envie de kebab"
+        },
+        "backoffice": {
+            "description": "Dashboard simple de gestion de coachs d'entreprises"
+        },
+        "portfolio":{
+            "description":"Ce site web"
         }
     },
     "about": {
         "title": "A propos",
-        "description": "Curieux de nature, j’aime toucher à tout. Je me passionne particulièrement pour les art visuels et les technologies du web. Chaque aspect de la création d’une application est important. Je peux vous aider à faire évoluer vos produits et intervenir autant sur des problèmatiques back-end que front-end.",
+        "description": "Curieux de nature, j’aime toucher à tout. Je me passionne particulièrement pour les arts visuels et les technologies du web. Chaque aspect de la création d’une application est important. Je peux vous aider à faire évoluer vos produits et intervenir autant sur des problèmatiques back-end que front-end.",
         "stack": {
             "tools": "Outils & Logiciels",
             "frameworks": "Frameworks & Librairies",
@@ -31,6 +40,93 @@
     "contact": {
         "call": "Laissez moi un message",
         "name": "Nom",
-        "send":"Envoyer"
+        "send": "Envoyer",
+        "snackbar": "Message envoyé !"
+    },
+    "resume": {
+        "button": "Retour",
+        "download": "Télécharger au format PDF",
+        "left": {
+            "stack": {
+                "title": "Languages et technologies"
+            },
+            "softwares": {
+                "title": "Logiciels et IDE",
+                "office": "Suite Office"
+            },
+            "languages": {
+                "title": "Langues",
+                "french": "Français langue maternelle",
+                "english": "Anglais courant",
+                "arabic": "Arabe scolaire"
+            },
+            "hobbies": {
+                "title": "Centres d'intèrêts",
+                "esport": "E-sport",
+                "music": "Guitare, Djembe",
+                "circus": "Arts du cirque",
+                "nutrition": "Nutrition",
+                "travel": "Voyages"
+            }
+        },
+        "right": {
+            "experiences": {
+                "title": "Expériences Proffesionelles",
+                "freelance": {
+                    "title": "Freelance Développeur Full-Stack",
+                    "date": "Depuis Décembre 2019",
+                    "description": [
+                        "Interventions sur un site de paris sportifs basé sur Symfony et Semantic-ui.",
+                        "Automatisation d'une campagne de lancement d'un concours avec Google Apps Scripts et Google Cloud Platform.",
+                        "Scripting et traitement de données sur des compétitions sportives avec Node.js, Puppeteer.js et Excel.js."
+                    ]
+                },
+                "internship": {
+                    "title": "Stage Développeur Full-Stack",
+                    "subtitle": "Flowbow, Paris, France",
+                    "date": "Septembre 2019 - Novembre 2019",
+                    "description": [
+                        "Réalisation d'un site vitrine et d'un backoffice d'administration avec le stack MongoDb, Express, Angular et Node.js selon la méthode Kanban.",
+                        "Maquettage, rédaction des spécifications techniques et d'un cahier de tests.",
+                        "Déploiement sur un VPS sous Debian avec Nginx et rédaction d'une documentation de passation."
+                    ]
+                },
+                "kerozen": {
+                    "title": "Co-Fondateur",
+                    "subtitle": "Kerozen, Arts du spectacle, La Marsa, Tunisie",
+                    "date": "Juin 2015 - Juillet 2017",
+                    "description": [
+                        "Design graphique des bannières et logos, tournage et montage de vidéos.",
+                        "Prestations évènementielles, cours et activités autour des arts du cirque."
+                    ]
+                }
+            },
+            "education": {
+                "title": "Formation",
+                "doranco": {
+                    "title": "Concepteur Développeur d'Applications",
+                    "subtitle": "Titre RNCP Niveau II (bac +4), Doranco, Paris",
+                    "date": "Février-Septembre 2019",
+                    "description": [
+                        "Environement .NET avec WinForms, WPF, Web Services SOAP et REST, ASP.Net MVC.",
+                        "Environement JavaScript avec Angular, Node.Js et MongoDB."
+                    ]
+                },
+                "gtm": {
+                    "title": "Certification Concepteur-Développeur .NET",
+                    "subtitle": "Gt'm Ingénierie, Paris",
+                    "date": "Août-Octobre 2018",
+                    "description": [
+                        "Formation axée sur l’environnement .NET.",
+                        "Réalisation d'un site web e-commerce avec le stack ASP.Net, Bootstrap et MySQL."
+                    ]
+                },
+                "usj": {
+                    "title": "License Biochimie",
+                    "subtitle": "Université Saint-Joseph, Beyrouth, Liban",
+                    "date": "Mars 2011- Juin 2014"
+                }
+            }
+        }
     }
 }

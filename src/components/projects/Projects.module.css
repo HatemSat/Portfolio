@@ -8,3 +8,8 @@
     flex-wrap: wrap;
     /* background-color: #a8e4ff; */
 }
+@media (max-width:499px) {
+    .Projects {
+        margin-bottom: 0px;
+    }
+}

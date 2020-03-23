@@ -27,29 +27,29 @@ const About = (props) => {
                                 <h3>{lang.about.stack.frameworks}</h3>
                                 {/* <br/> */}
                                 <p>React</p>
-                                <p>Angular 2+</p>
-                                <p>Bootstrap</p>
-                                <p>jQuery</p>
                                 <p>Bulma</p>
+                                <p>Angular</p>
+                                <p>jQuery</p>
+                                <p>Bootstrap</p>
                                 <p>ASP.NET MVC</p>
                             </div>
                             <div>
                                 <h3>{lang.about.stack.languages}</h3>
                                 {/* <br/> */}
-                                <p>JavaScript</p>
+                                <p>C#</p>
+                                <p>SQL</p>
                                 <p>SASS</p>
                                 <p>LESS</p>
-                                <p>SQL</p>
-                                <p>C#</p>
+                                <p>JavaScript</p>
                             </div>
                             <div>
                                 <h3>{lang.about.stack.cloud}</h3>
                                 {/* <br/> */}
                                 <p>Nginx</p>
                                 <p>Debian</p>
+                                <p>Heroku</p>
                                 <p>Firebase</p>
                                 <p>Google Cloud Functions</p>
-                                <p>Heroku</p>
                             </div>
                    
 

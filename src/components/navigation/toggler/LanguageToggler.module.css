@@ -6,13 +6,24 @@
 
 .Language img {
     width: 1.2rem;
-    margin-left: 10px;
+    padding-left: 10px;
     cursor: pointer;
     position: relative;
     transition: 0.5s;
 }
 
+.Language a {
+    cursor: pointer;
+}
+
+.Language button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 1rem;
+}
 .White {
     opacity: 0.9;
-    
 }

@@ -16,11 +16,20 @@
         },
         "flowbow": {
             "description": "A showcase website for a startup in the human ressources field"
+        },
+        "snake": {
+            "description": "Mulitplayer snake where the snake is hungry for kebab"
+        },
+        "backoffice": {
+            "description": "Simple dashboard to manage companies coaches"
+        },
+        "portfolio":{
+            "description":"This Website"
         }
     },
     "about": {
         "title": "About me",
-        "description": "Curieux de nature, j’aime toucher à tout. Je me passionne particulièrement pour les art visuels et les technologies du web. Chaque aspect de la création d’une application est important. Je peux vous aider à faire évoluer vos produits et intervenir autant sur des problèmatiques back-end que front-end.",
+        "description": "Curious by nature, I like to touch everything. I am particularly passionate about visual arts and web technologies. Every aspect of creating an app is important. I can help you to develop your products and intervene as much on back-end issues as front-end.",
         "stack": {
             "tools": "Tools & Software",
             "frameworks": "Frameworks & Librairies",
@@ -31,6 +40,93 @@
     "contact": {
         "call": "Leave me a message",
         "name": "Name",
-        "send":"Send"
+        "send": "Send",
+        "snackbar": "Message sent !"
+    },
+    "resume": {
+        "button": "Back",
+        "download": "Download as PDF",
+        "left": {
+            "stack": {
+                "title": "Languages & Technologies"
+            },
+            "softwares": {
+                "title": "Softwares & IDEs",
+                "office": "Office Suite"
+            },
+            "languages": {
+                "title": "Languages",
+                "french": "French mother tongue",
+                "english": "English B2",
+                "arabic": "Arabic A2"
+            },
+            "hobbies": {
+                "title": "Hobbies",
+                "esport": "E-sport",
+                "music": "Guitar, Djembe",
+                "circus": "Circus arts",
+                "nutrition": "Nutrition",
+                "travel": "Travels"
+            }
+        },
+        "right": {
+            "experiences": {
+                "title": "Professional Experiences",
+                "freelance": {
+                    "title": "Freelance Full-Stack Web Developer",
+                    "date": "Since December 2019",
+                    "description": [
+                        "Participation in the development of an online betting website based on symfony and Semantic-ui.",
+                        "Automation of a competition launch campaign using Google Apps Scripts and Google Cloud Platform.",
+                        "Scripting and data processing on sports competitions using Puppeteer.js and Excel.js."
+                    ]
+                },
+                "internship": {
+                    "title": "Full-Stack Web Developer Intership",
+                    "subtitle": "Flowbow, Paris, France",
+                    "date": "September 2019 - November 2019",
+                    "description": [
+                        "Creation of a showcase website and an administration backoffice with the stack MongoDb, Express, Angular and Node.js according to the Kanban method.",
+                        "Wireframing, writing of technical specifications and tests set.",
+                        "Deploying on a Debian VPS with Nginx and writing a handover documentation."
+                    ]
+                },
+                "kerozen": {
+                    "title": "Co-Founder",
+                    "subtitle": "Kerozen, Performing Arts, La Marsa, Tunisia",
+                    "date": "June 2015 - July 2017",
+                    "description": [
+                        "Graphic design of banners and logos, shooting and editing of videos.",
+                        "Events, courses and activities relating to the circus arts."
+                    ]
+                }
+            },
+            "education": {
+                "title": "Education",
+                "doranco": {
+                    "title": "MSC in Software Development",
+                    "subtitle": "Doranco, Paris, France",
+                    "date": "February 2019 - September 2019",
+                    "description": [
+                        ".Net stack using Winforms, WPF, Web Services SOAP & REST, ASP.Net MVC.",
+                        "JavaScript stack using node.js, Angular 2+ and MongoDB."
+                    ]
+                },
+                "gtm": {
+                    "title": "Designer-Developer .Net Certification",
+                    "subtitle": "Gt'm Ingénierie, Paris, France",
+                    "date": "August 2018 - October 2018",
+                    "description": [
+                        ".Net framework oriented certification.",
+                        "Development of an e-commerce website with the stack ASP.Net Bootstrap and MySQL."
+                    ]
+                },
+                "usj": {
+                    "title": "BSC in Biochemistry",
+                    "subtitle": "Saint-Joseph University, Beirut, Lebanon",
+                    "date": "March 2011 - June 2014"
+                }
+            }
+        }
     }
 }

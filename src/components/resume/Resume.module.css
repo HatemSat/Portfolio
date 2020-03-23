@@ -1,21 +1,177 @@
-.ResumeContainer {
-    /* width: 100vw; */
+.MainContainer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    /* height: 100vh; */
+    /* height: 100px; */
+    height: fit-content;
+    top: 180px;
+    /* top: 100px; */
+    position: relative;
+}
+
+.ResumeContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-
-
-    /* position: relative; */
-    position: absolute;
-    /* top: 100px;
-    left:0; */
-    margin-top: 5vh;
+    /* top: 200px; */
+    /* position: absolute; */
+    position: relative;
+    justify-content: space-around;
+    align-items: flex-start;
+    
 }
 
-.Picture {
-    margin: 5% 0;
-    width: 50%;
+.ButtonContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.ButtonContainer .BackButton {
+    margin: 0 8% 3% 8%;
+}
+
+.DownloadButton {
+    align-self: flex-start;
+    margin: 0 8% 3% 8%;
+}
+
+.BackButton, .DownloadButton {
+    /* position: absolute; */
+    /* width: 60px; */
+    align-self: flex-start;
+    margin: 0 8% 3% 8%;
+    border-radius: 5px;
+    border: 1px solid black;
+    /* padding: 3px; */
+    padding: 1px 5px;
+    font: 1rem 'Roboto Mono';
+    /* background-color: rgba(212, 212, 212, 0.534); */
+    background-color: rgb(241, 241, 241);
+    /* transition: all 1s ease; */
+}
+
+.BackButton:hover,.DownloadButton:hover {
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+}
+
+.BackButton:active,.DownloadButton:active {
+    box-shadow: none;
+}
+
+.BackButton:focus,.DownloadButton:focus {
+    outline: none;
+}
+
+.ResumeContainer p {
+    text-align: justify;
+}
+
+.Line {
+    outline: 1px solid black;
+    height: 100%;
+}
+
+@media only screen and (max-width:499px) {
+    .ButtonContainer {
+       margin-bottom: 50px;
+    }
+    .ResumeContainer {
+        flex-direction: column-reverse;
+        padding: 0 30px 100px 30px;
+        margin-bottom: 0px;
+    }
+    .LeftContainer {
+        /* width: 30%; */
+    }
+    .ResumeContainer h3 {
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+    .RightContainer {
+        width: 100%;
+    }
+    .RightContainer ul {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width:500px) {
+    .ResumeContainer {
+        flex-direction: row;
+        padding: 0 8% 0 8%;
+        height: 1000px;
+        margin-bottom: 100px;
+    }
+    .LeftContainer {
+        /* width: 30%; */
+    }
+    .RightContainer {
+        width: 60%;
+    }
+    .RightContainer ul {
+        margin-left: 5%;
+    }
+}
+
+.LeftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.RightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.LeftContainer h3 {
+    margin-bottom: 20px;
+}
+
+.LeftContainer div:not(:first-child) h3 {
+    /* margin-top: 60px; */
+}
+
+.RightContainer h3 {
+    margin-bottom: 20px;
+}
+
+.RightContainer div div:not(:first-of-type) h4:nth-child(1) {
+    /* color: rgb(146, 0, 0); */
+    margin-top: 20px;
+}
+
+.RightContainer div div h4:nth-child(1) {
+    color: rgb(146, 0, 0);
+}
+
+.RightContainer div div h4:not(:first-of-type) {
+    /* color: rgb(0, 148, 57); */
+    /* margin-top: 20px; */
+    font-weight: normal;
+    margin-left: 10px;
+    font-family: 'Roboto Mono';
+}
+
+.RightContainer p {
+    /* margin-left: 10px; */
+    /* display: inline; */
+    /* left: -10px; */
+    /* position: relative; */
+}
+
+.RightContainer ul {
+    /* margin-left: 10px; */
+}
+
+.RightContainer li {
+    /* list-style-type: none; */
+    /* list-style-image:url(../../assets/images/right-arrow.png); */
+    /* background-size: 15px; */
 }

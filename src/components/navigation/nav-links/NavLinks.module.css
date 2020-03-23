@@ -1,0 +1,27 @@
+/* .NavLinks {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+    width: 100%;
+} */
+
+
+.NavLinks a, .NavLinks button {
+    font-family: 'Noto Sans';
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 10 20px;
+    position: relative;
+    transition: 0.00s all ease-in-out;
+    letter-spacing: 1px;
+}
+.NavLinks button{
+    font-family: 'Noto Sans';
+}
+
+.NavLinks a:hover {
+    color: #9c9c9c;
+}

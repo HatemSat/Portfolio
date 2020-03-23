@@ -18,6 +18,11 @@
     box-shadow: none;
     border: 1px solid black;
     font: 1rem 'Roboto Mono';
+    outline: none;
+}
+
+.Contact textarea:focus, input:focus {
+    outline: none;
 }
 
 .Contact input:focus, textarea:focus {
@@ -31,6 +36,22 @@
     border: 1px solid black;
     padding: 1px;
     font: 0.8rem 'Roboto Mono';
+}
+
+.Button button:hover:enabled {
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+}
+
+.Button button:hover:enabled{
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+}
+.Button button:active:enabled{
+    box-shadow: none;
+}
+.Button button:focus:enabled{
+    outline: none;
 }
 
 @media (max-width:499px) {
