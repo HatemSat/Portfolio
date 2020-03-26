@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 html.wf-loading * {
     opacity: 0;
@@ -40,7 +40,12 @@ body {
     transition: opacity 150ms ease-in-out;
 }
 
-a:active, a:focus {
+a:active,
+a:focus {
     outline: 0;
     border: none;
+}
+
+div {
+    -webkit-tap-highlight-color:transparent;
 }

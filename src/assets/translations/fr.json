@@ -128,5 +128,11 @@
                 }
             }
         }
+    },
+    "footer":{
+        "clipboard":{
+            "title":"Copier dans le presse-papier",
+            "message":"Copié"
+        }
     }
 }
