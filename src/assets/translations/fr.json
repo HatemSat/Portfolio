@@ -23,8 +23,11 @@
         "backoffice": {
             "description": "Dashboard simple de gestion de coachs d'entreprises"
         },
-        "portfolio":{
-            "description":"Ce site web"
+        "portfolio": {
+            "description": "Ce site web"
+        },
+        "toulousewifi": {
+            "description": "Localiser un wifi gratuit sur la ville de Toulouse"
         }
     },
     "about": {
@@ -129,10 +132,10 @@
             }
         }
     },
-    "footer":{
-        "clipboard":{
-            "title":"Copier dans le presse-papier",
-            "message":"Copié"
+    "footer": {
+        "clipboard": {
+            "title": "Copier dans le presse-papier",
+            "message": "Copié"
         }
     }
 }

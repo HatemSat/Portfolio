@@ -23,8 +23,11 @@
         "backoffice": {
             "description": "Simple dashboard to manage companies coaches"
         },
-        "portfolio":{
-            "description":"This Website"
+        "portfolio": {
+            "description": "This Website"
+        },
+        "toulousewifi": {
+            "description": "Find free wifi spot in the city of Toulouse"
         }
     },
     "about": {
@@ -129,10 +132,10 @@
             }
         }
     },
-    "footer":{
-        "clipboard":{
-            "title":"Copy to clipboard",
-            "message":"Copied"
+    "footer": {
+        "clipboard": {
+            "title": "Copy to clipboard",
+            "message": "Copied"
         }
     }
 }

@@ -7,6 +7,7 @@ import Card from "../card/Card";
 import snake from "../../assets/gif/snake.webm";
 import backoffice from "../../assets/gif/backoffice.webm";
 import portfolio from "../../assets/gif/portfolio.webm";
+import toulousewifi from "../../assets/gif/toulousewifi.webm";
 
 import javascript from "../../assets/images/stack/javascript.png";
 import bootstrap from "../../assets/images/stack/bootstrap.png";
@@ -19,6 +20,8 @@ import mongo from "../../assets/images/stack/mongo.png";
 import node from "../../assets/images/stack/node.png";
 import html from "../../assets/images/stack/html.png";
 import css from "../../assets/images/stack/css.png";
+import vue from "../../assets/images/stack/vue.png";
+import bulma from "../../assets/images/stack/bulma.png";
 
 const Projects = () => {
     return (
@@ -41,6 +44,12 @@ const Projects = () => {
                         stack={[angular, mdb, mongo]}
                         gif={backoffice}
                         description={lang.projects.backoffice.description}
+                        websitelink="http://back.hatemsat.fr"
+                        githublink="https://github.com/HatemSat/Companify"></Card>
+                    <Card
+                        stack={[vue,bulma]}
+                        gif={toulousewifi}
+                        description={lang.projects.toulousewifi.description}
                         websitelink="http://back.hatemsat.fr"
                         githublink="https://github.com/HatemSat/Companify"></Card>
                 </div>
