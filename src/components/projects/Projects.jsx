@@ -3,7 +3,6 @@ import classes from "./Projects.module.css";
 import { LanguageContext } from "../../context/context";
 import Card from "../card/Card";
 
-// import flowbow from "../../assets/gif/flowbow.webm";
 import snake from "../../assets/gif/snake.webm";
 import backoffice from "../../assets/gif/backoffice.webm";
 import portfolio from "../../assets/gif/portfolio.webm";
@@ -29,6 +28,18 @@ const Projects = () => {
             {({ lang }) => (
                 <div className={classes.Projects}>
                     <Card
+                        stack={[vue,bulma]}
+                        gif={toulousewifi}
+                        description={lang.projects.toulousewifi.description}
+                        websitelink="http://wifitoulouse.fr"
+                        githublink="https://github.com/HatemSat/toulouse-wifi"></Card>
+                    <Card
+                        stack={[angular, mdb, mongo]}
+                        gif={backoffice}
+                        description={lang.projects.backoffice.description}
+                        websitelink="http://back.hatemsat.fr"
+                        githublink="https://github.com/HatemSat/Companify"></Card>
+                    <Card
                         stack={[javascript, socket, node, bootstrap]}
                         gif={snake}
                         description={lang.projects.snake.description}
@@ -40,18 +51,6 @@ const Projects = () => {
                         description={lang.projects.portfolio.description}
                         websitelink="http://hatemsat.fr"
                         githublink="https://github.com/HatemSat/Portfolio"></Card>
-                    <Card
-                        stack={[angular, mdb, mongo]}
-                        gif={backoffice}
-                        description={lang.projects.backoffice.description}
-                        websitelink="http://back.hatemsat.fr"
-                        githublink="https://github.com/HatemSat/Companify"></Card>
-                    <Card
-                        stack={[vue,bulma]}
-                        gif={toulousewifi}
-                        description={lang.projects.toulousewifi.description}
-                        websitelink="http://back.hatemsat.fr"
-                        githublink="https://github.com/HatemSat/Companify"></Card>
                 </div>
             )}
         </LanguageContext.Consumer>

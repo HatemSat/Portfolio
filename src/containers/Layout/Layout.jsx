@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import classes from "./Layout.module.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import Toolbar from "../../components/navigation/toolbar/Toolbar";
+import Toolbar from "../../components/navigation/tool-bar/Toolbar";
 import Contact from "../../components/contact/Contact";
 import Home from "../../components/home/Home";
 import Projects from "../../components/projects/Projects";

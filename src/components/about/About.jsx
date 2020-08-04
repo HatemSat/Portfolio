@@ -26,9 +26,10 @@ const About = (props) => {
                             <div>
                                 <h3>{lang.about.stack.frameworks}</h3>
                                 {/* <br/> */}
+                                <p>Vue</p>
                                 <p>React</p>
-                                <p>Bulma</p>
                                 <p>Angular</p>
+                                <p>Bulma</p>
                                 <p>jQuery</p>
                                 <p>Bootstrap</p>
                                 <p>ASP.NET MVC</p>
