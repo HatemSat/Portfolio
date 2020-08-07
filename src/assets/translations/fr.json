@@ -74,14 +74,14 @@
         },
         "right": {
             "experiences": {
-                "title": "Expériences Proffesionelles",
+                "title": "Expériences Profesionelles",
                 "freelance": {
                     "title": "Freelance Développeur Full-Stack",
                     "date": "Depuis Décembre 2019",
                     "description": [
-                        "Interventions sur un site de paris sportifs basé sur Symfony et Semantic-ui.",
-                        "Automatisation d'une campagne de lancement d'un concours avec Google Apps Scripts et Google Cloud Platform.",
-                        "Scripting et traitement de données sur des compétitions sportives avec Node.js, Puppeteer.js et Excel.js."
+                        "Développement d'une application mobile android d'aide à la livraison avec React Native.",
+                        "Web scraping et traitement de données sur des compétitions sportives avec Node.js et Puppeteer.js.",
+                        "Automatisation d'une campagne de lancement d'un concours avec Google Apps Scripts et Google Cloud Platform."
                     ]
                 },
                 "internship": {
@@ -108,11 +108,11 @@
                 "title": "Formation",
                 "doranco": {
                     "title": "Concepteur Développeur d'Applications",
-                    "subtitle": "Titre RNCP Niveau II (bac +4), Doranco, Paris",
+                    "subtitle": "Titre RNCP Niveau II (bac + 4), Doranco, Paris",
                     "date": "Février-Septembre 2019",
                     "description": [
-                        "Environement .NET avec WinForms, WPF, Web Services SOAP et REST, ASP.Net MVC.",
-                        "Environement JavaScript avec Angular, Node.Js et MongoDB."
+                        "Environement JavaScript avec Angular, Node.Js et MongoDB.",
+                        "Environement .NET avec WinForms, WPF, Web Services SOAP et REST, ASP.Net MVC."
                     ]
                 },
                 "gtm": {

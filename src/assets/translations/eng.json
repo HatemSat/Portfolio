@@ -79,9 +79,9 @@
                     "title": "Freelance Full-Stack Web Developer",
                     "date": "Since December 2019",
                     "description": [
-                        "Participation in the development of an online betting website based on symfony and Semantic-ui.",
-                        "Automation of a competition launch campaign using Google Apps Scripts and Google Cloud Platform.",
-                        "Scripting and data processing on sports competitions using Puppeteer.js and Excel.js."
+                        "Development of a delivery mobile app for android using React Native.",
+                        "Web scraping and data processing on sports competitions using Node.js and Puppeteer.js.",
+                        "Automation of a launch campaign for a contest using Google Apps Scripts and Google Cloud Platform."
                     ]
                 },
                 "internship": {

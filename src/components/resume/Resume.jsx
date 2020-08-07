@@ -55,9 +55,11 @@ const Resume = (props) => {
                                         <p>Node.js</p>
                                         <p>React</p>
                                         <p>Angular</p>
-                                        <p>C#, ASP.Net MVC, WPF</p>
+                                        <p>Vue</p>
+                                        {/* <p>C#, ASP.Net MVC, WPF</p> */}
                                         <p>Sass</p>
                                         <p>Firebase</p>
+                                        <p>Cloud functions</p>
                                         <p>Git</p>
                                     </div>
                                     <div>
@@ -66,7 +68,7 @@ const Resume = (props) => {
                                         <p>Visual studio code</p>
                                         <p>Photoshop / Illustrator</p>
                                         <p>Figma</p>
-                                        <p>{l.softwares.office}</p>
+                                        {/* <p>{l.softwares.office}</p> */}
                                     </div>
                                     <div>
                                         <h3>{l.languages.title}</h3>
