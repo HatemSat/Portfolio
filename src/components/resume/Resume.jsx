@@ -43,8 +43,10 @@ const Resume = (props) => {
                     const r = lang.resume.right
                     return (
                         <div className={classes.MainContainer}>
-                            <button onClick={goBackHandler} className={classes.BackButton}>{lang.resume.button}</button>
-
+                            <div className={classes.ButtonContainer}>
+                                <button onClick={goBackHandler} className={classes.BackButton}>{lang.resume.button}</button>
+                                <button onClick={downloadHandler} className={classes.DownloadButton}>{lang.resume.download}</button>
+                            </div>
                             <div className={classes.ResumeContainer}>
                                 {/* <img className={classes.Picture} alt="Resume" src={ResumePicture}></img> */}
                                 {/* <h1>Resume</h1> */}
@@ -152,7 +154,6 @@ const Resume = (props) => {
                             <div className={classes.ButtonContainer}>
                                 <button onClick={goBackHandler} className={classes.BackButton}>{lang.resume.button}</button>
                                 <button onClick={downloadHandler} className={classes.DownloadButton}>{lang.resume.download}</button>
-
                             </div>
                         </div>
 
