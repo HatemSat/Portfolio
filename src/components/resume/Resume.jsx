@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from './Resume.module.css'
 import Aux from '../../hoc/auxilliary/Auxilliary'
 import { LanguageContext } from '../../context/context'
@@ -8,6 +8,7 @@ import axios from 'axios'
 const Resume = (props) => {
 
     let history = useHistory();
+
 
     const goBackHandler = () => {
         history.goBack()
@@ -48,8 +49,6 @@ const Resume = (props) => {
                                 <button onClick={downloadHandler} className={classes.DownloadButton}>{lang.resume.download}</button>
                             </div>
                             <div className={classes.ResumeContainer}>
-                                {/* <img className={classes.Picture} alt="Resume" src={ResumePicture}></img> */}
-                                {/* <h1>Resume</h1> */}
 
                                 <div className={classes.LeftContainer}>
                                     <div>
@@ -156,10 +155,8 @@ const Resume = (props) => {
                                 <button onClick={downloadHandler} className={classes.DownloadButton}>{lang.resume.download}</button>
                             </div>
                         </div>
-
                     )
                 }}
-
             </LanguageContext.Consumer>
         </Aux>
     )
