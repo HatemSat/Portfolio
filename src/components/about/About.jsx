@@ -32,15 +32,16 @@ const About = (props) => {
                                 <p>Bulma</p>
                                 <p>jQuery</p>
                                 <p>Bootstrap</p>
-                                <p>ASP.NET MVC</p>
+                                {/* <p>ASP.NET MVC</p> */}
                             </div>
                             <div>
                                 <h3>{lang.about.stack.languages}</h3>
                                 {/* <br/> */}
-                                <p>C#</p>
+                                {/* <p>C#</p> */}
                                 <p>SQL</p>
-                                <p>SASS</p>
-                                <p>LESS</p>
+                                <p>HTML</p>
+                                <p>SaSS</p>
+                                <p>LeSS</p>
                                 <p>JavaScript</p>
                             </div>
                             <div>
