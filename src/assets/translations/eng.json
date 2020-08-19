@@ -12,7 +12,8 @@
     "projects": {
         "card": {
             "website": "View Website",
-            "code": "View Code"
+            "code": "View Code",
+            "details": "Details"
         },
         "flowbow": {
             "description": "A showcase website for a startup in the human ressources field"

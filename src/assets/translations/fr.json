@@ -12,7 +12,8 @@
     "projects": {
         "card": {
             "website": "Site Web",
-            "code": "Code Source"
+            "code": "Code Source",
+            "details": "Détails"
         },
         "flowbow": {
             "description": "Site vitrine pour une startup dans le domaine des ressources humaines"

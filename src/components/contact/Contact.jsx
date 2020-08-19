@@ -74,9 +74,7 @@ class Contact extends Component {
         this.setState({
             form: {
                 ...this.state.form,
-                [name]: {
-                    ...this.state.form[name], value, valid
-                }
+                [name]: { ...this.state.form[name], value, valid }
             }
         }, () => {
             if (this.state.form.email.valid && this.state.form.name.valid && this.state.form.message.valid) {
@@ -94,6 +92,7 @@ class Contact extends Component {
         }
         );
     };
+
     render() {
         return (
             <LanguageContext.Consumer>

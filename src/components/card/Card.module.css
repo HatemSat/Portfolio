@@ -11,9 +11,8 @@
 
 @media (max-width: 499px) {
     .Card {
-        max-height: 400px;
+        max-height: 500px;
         margin: 0 2% 50% 2%;
-        /* margin: 0 2% 5% 2%; */
     }
 }
 
@@ -35,13 +34,11 @@
     width: 100%;
     height: 100%;
     border-bottom: 1px solid rgb(221, 221, 221);
-
 }
 
 .Stack {
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .Stack img {
@@ -59,87 +56,43 @@
     font-size: 0.9rem;
 }
 
+.Row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 25%;
+}
+
 .Backdrop {
     background-color: black;
     position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
     opacity: 0;
-    justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .Backdrop:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
-.MobileIcons {
-    height: 100%;
-    width: 100%;
-    /* position: absolute; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: center; */
-    justify-content: space-around;
-    /* background-color: rgb(124, 124, 124); */
-}
-
-/* Only for real hover with mouse */
-
-/* @media (hover: hover) {
-    .Backdrop:hover {
-        opacity: 0.7;
-        transition: opacity 0.3s ease;
-    }
-} */
-
-@media (max-width: 499px) {
-    .Backdrop {
-        display: none;
-    }
-    .Code p {
-        color: black;
-    }
-    .Website p {
-        color: black;
-    }
-}
-
-@media (min-width: 500px) {
-    /* .Backdrop {
-        display: flex;
-    } */
-    .MobileIcons {
-        display: none;
-    }
-    .Code p,
-    .Website p {
-        color: white;
-    }
-    /* .Website p {
-        color: white;
-    } */
-}
-
-.Code:hover,
-.Website:hover {
+.Code:hover, .Website:hover, .Details:hover {
     animation: focus ease-in-out 1s infinite alternate forwards;
 }
 
-.Code p,
-.Website p {
+.Code p, .Website p, .Details p {
     font-family: "Roboto Mono";
     font-size: 0.9rem;
     font-weight: 600;
 }
 
-.Code a,
-.Website a {
+.Code a, .Website a, .Details a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,37 +100,43 @@
     text-decoration: none;
 }
 
-.Code img,
-.Website img {
+.Code img, .Website img,.Details img {
     width: 50px;
 }
 
-/* .Website:hover {
-    animation: focus ease-in-out 1s infinite alternate forwards;
-} */
+@media (max-width: 499px) {
+    .Backdrop {
+        display: none;
+    }
+    .MobileIcons {
+        /* height: 100%; */
+        /* height: 150px;  */
+        width: 100%;
+        /* position: absolute; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        justify-content: space-around;
+        /* background-color: rgb(124, 124, 124); */
+    }
+    .Code p, .Website p, .Details p {
+        color: black;
+        font-size: .8rem;
+    }
+    .Details {
+        margin: 5px 0 5px 0;
+    }
+}
 
-/* .Website p {
-    font-family: 'Roboto Mono';
-    font-size: 0.9rem;
-    font-weight: 600;
-} */
-
-/* .Website a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-} */
-
-/* .Website img {
-    width: 50px;
-} */
-
-/* .NoHover {
-    pointer-events: none;
-    touch-action: none;
-} */
+@media (min-width: 500px) {
+    .MobileIcons {
+        display: none;
+    }
+    .Code p, .Website p, .Details p {
+        color: white;
+    }
+}
 
 @keyframes focus {
     50% {

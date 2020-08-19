@@ -6,6 +6,8 @@ import code from "../../assets/images/stack/code.png";
 import codeblack from "../../assets/images/stack/code-black.png";
 import screen from "../../assets/images/stack/screen.png";
 import screenblack from "../../assets/images/stack/screen-black.png";
+import details from "../../assets/images/stack/details.png";
+import detailsblack from "../../assets/images/stack/details-black.png";
 import { Component } from "react";
 
 class Card extends Component {
@@ -19,7 +21,7 @@ class Card extends Component {
         //     this.backdropRef.current.classList.add(classes.NoHover)
         // }
     };
-    leaveCardHandler = e => {};
+    leaveCardHandler = e => { };
 
     render() {
         return (
@@ -49,51 +51,80 @@ class Card extends Component {
                         </div>
 
                         <div
+                            className={classes.Backdrop}
                             ref={this.backdropRef}
                             onMouseLeave={this.leaveCardHandler}
-                            onMouseEnter={this.enterCardHandler}
-                            className={classes.Backdrop}>
-                            <div className={classes.Website}>
-                                <a
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    href={this.props.websitelink}>
-                                    <img
-                                        src={screen}
-                                        alt="Computer Screen Icon"
-                                    />
-                                    <p>{lang.projects.card.website}</p>
-                                </a>
+                            onMouseEnter={this.enterCardHandler}>
+
+                            <div className={classes.Row}>
+                                <div className={classes.Website}>
+                                    <a
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        href={this.props.websitelink}>
+                                        <img
+                                            src={screen}
+                                            alt="Computer Screen Icon"
+                                        />
+                                        <p>{lang.projects.card.website}</p>
+                                    </a>
+                                </div>
+
+                                <div className={classes.Code}>
+                                    <a
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        href={this.props.githublink}>
+                                        <img src={code} alt="Code Icon" />
+                                        <p>{lang.projects.card.code}</p>
+                                    </a>
+                                </div>
                             </div>
 
-                            <div className={classes.Code}>
-                                <a
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    href={this.props.githublink}>
-                                    <img src={code} alt="Code Icon" />
-                                    <p>{lang.projects.card.code}</p>
-                                </a>
+                            <div className={classes.Row}>
+                                <div className={classes.Details}>
+                                    <a
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                        href={this.props.githublink}>
+                                        <img src={details} alt="Details Icon" />
+                                        <p>{lang.projects.card.details}</p>
+                                    </a>
+                                </div>
                             </div>
+
+
                         </div>
 
                         <div className={classes.MobileIcons}>
-                            <div className={classes.Website}>
-                                <a href={this.props.websitelink}>
-                                    <img
-                                        src={screenblack}
-                                        alt="Computer Screen Icon"
-                                    />
-                                    <p>{lang.projects.card.website}</p>
-                                </a>
+                            <div className={classes.Row}>
+
+                                <div className={classes.Website}>
+                                    <a href={this.props.websitelink}>
+                                        <img
+                                            src={screenblack}
+                                            alt="Computer Screen Icon"
+                                        />
+                                        <p>{lang.projects.card.website}</p>
+                                    </a>
+                                </div>
+
+                                <div className={classes.Code}>
+                                    <a href={this.props.githublink}>
+                                        <img src={codeblack} alt="Code Icon" />
+                                        <p>{lang.projects.card.code}</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className={classes.Row}>
+                                <div className={classes.Details}>
+                                    <a href={this.props.githublink}>
+                                        <img src={detailsblack} alt="Code Icon" />
+                                        <p>{lang.projects.card.details}</p>
+                                    </a>
+                                </div>
                             </div>
 
-                            <div className={classes.Code}>
-                                <a href={this.props.githublink}>
-                                    <img src={codeblack} alt="Code Icon" />
-                                    <p>{lang.projects.card.code}</p>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 )}
