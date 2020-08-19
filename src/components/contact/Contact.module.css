@@ -54,7 +54,7 @@
     outline: none;
 }
 
-@media (max-width:499px) {
+@media (max-width:800px) {
     .Contact {
         width: 80%;
     }

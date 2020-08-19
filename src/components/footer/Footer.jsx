@@ -26,10 +26,10 @@ export class Footer extends Component {
         textArea.select();
         document.execCommand("copy");
 
-        this.setState({isCopied:true})
+        this.setState({ isCopied: true })
         setTimeout(() => {
-            this.setState({isCopied:false})
-        document.body.removeChild(textArea);
+            this.setState({ isCopied: false })
+            document.body.removeChild(textArea);
         }, 3000);
 
     };
@@ -50,6 +50,9 @@ export class Footer extends Component {
                                 title={lang.footer.clipboard.title}
                             />
                         </p>
+
+                        <p className={classes.Credits}>{new Date().getFullYear()}</p>
+
                         <span className={classes.Social}>
                             <a
                                 rel="noopener noreferrer"
