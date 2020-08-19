@@ -29,6 +29,11 @@
     border: 1px solid rgb(0, 72, 255);
 }
 
+.Contact textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
 .Button button {
     align-self: flex-end;
     width: 20%;
@@ -43,14 +48,16 @@
     box-shadow: 1px 1px 1px black;
 }
 
-.Button button:hover:enabled{
+.Button button:hover:enabled {
     background-color: white;
     box-shadow: 1px 1px 1px black;
 }
-.Button button:active:enabled{
+
+.Button button:active:enabled {
     box-shadow: none;
 }
-.Button button:focus:enabled{
+
+.Button button:focus:enabled {
     outline: none;
 }
 

@@ -36,10 +36,10 @@ class Contact extends Component {
                 name: this.state.form.name.value,
                 message: this.state.form.message.value
             })
-            .then(function(response) {
+            .then(function (response) {
                 console.log(response);
             })
-            .catch(function(error) {
+            .catch(function (error) {
                 console.log(error);
             });
         this.setState({ isSnackBarVisible: true });
@@ -71,36 +71,27 @@ class Contact extends Component {
                 break;
         }
 
-        this.setState(
-            {
-                form: {
-                    ...this.state.form,
-                    [name]: {
-                        ...this.state.form[name],
-                        value,
-                        valid
-                    }
+        this.setState({
+            form: {
+                ...this.state.form,
+                [name]: {
+                    ...this.state.form[name], value, valid
                 }
-            },
-            () => {
-                if (
-                    this.state.form.email.valid &&
-                    this.state.form.name.valid &&
-                    this.state.form.message.valid
-                ) {
-                    buttonDisabled = false;
-                } else {
-                    buttonDisabled = true;
-                }
-                this.setState({
-                    form: {
-                        ...this.state.form,
-                        button: {
-                            disabled: buttonDisabled
-                        }
-                    }
-                });
             }
+        }, () => {
+            if (this.state.form.email.valid && this.state.form.name.valid && this.state.form.message.valid) {
+                buttonDisabled = false;
+            } else {
+                buttonDisabled = true;
+            }
+            this.setState({
+                form: {
+                    ...this.state.form, button: {
+                        disabled: buttonDisabled
+                    }
+                }
+            });
+        }
         );
     };
     render() {
