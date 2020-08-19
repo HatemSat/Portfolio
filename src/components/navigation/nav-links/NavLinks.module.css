@@ -16,7 +16,7 @@
     padding: 10 20px;
     position: relative;
     transition: 0s all ease-in-out;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .NavLinks button {
     font-family: "Noto Sans";

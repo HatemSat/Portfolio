@@ -15,7 +15,7 @@ class Toolbar extends Component {
         if (window.scrollY === 0 && window.scrollY <= 80) {
             this.toolbarRef.current.style.borderBottom = '0px solid black'
         } else if (window.scrollY > 80) {
-            this.toolbarRef.current.style.borderBottom = '1px solid black'
+            this.toolbarRef.current.style.borderBottom = '3px solid black'
         }
     }
     componentDidMount = () => {
@@ -27,7 +27,6 @@ class Toolbar extends Component {
     render() {
 
         return (
-
             <header ref={this.toolbarRef} className={classes.Toolbar}>
                 <div className={classes.Logo}>
                     <Link to='/'>

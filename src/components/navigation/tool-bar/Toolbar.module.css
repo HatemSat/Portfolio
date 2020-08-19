@@ -1,6 +1,5 @@
 .Logo {
     margin-right: auto;
-    /* margin-right: 5%; */
     margin-left: 5%;
     display: flex;
     transition: 3s linear;
@@ -16,12 +15,10 @@
     width: 40px;
 }
 
-
 @media (hover: hover) {
     .Logo img:hover {
         animation: rotating 20s ease-out infinite;
     }
-    
 }
 
 @keyframes rotating {
@@ -37,21 +34,14 @@
     display: flex;
     align-content: center;
     justify-content: flex-end;
-    /* position: absolute; */
     position: fixed;
     z-index: 5;
-    /* padding: 1% 0; */
     padding: 10px 0;
-    /* height: 2rem; */
-    /* height: auto; */
     height: 5vh;
     min-height: 25px;
     width: 100%;
-    /* position: relative; */
-    /* padding-right: 100px; */
-    /* border-bottom: 1px solid black; */
-    /* border-bottom-left-radius: 20px; */
     background-color: #ffffff;
+    border-radius: 20%;
 }
 
 .Toolbar nav {
@@ -86,29 +76,3 @@
         width: 60%;
     }
 }
-
-/*
-
-.Toolbar nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 1rem;
-    width: 100%;
-}
-
-.Toolbar nav ul a {
-    font-family: 'Noto Sans';
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    padding: 10 20px;
-    position: relative;
-    transition: 0.00s all ease-in-out;
-    letter-spacing: 1px;
-}
-
-.Toolbar nav ul a:hover {
-    color: #9c9c9c;
-} */
