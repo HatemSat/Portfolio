@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import classes from './Resume.module.css'
 import Aux from '../../hoc/auxilliary/Auxilliary'
 import { LanguageContext } from '../../context/context'
@@ -8,7 +8,6 @@ import axios from 'axios'
 const Resume = (props) => {
 
     let history = useHistory();
-
 
     const goBackHandler = () => {
         history.goBack()

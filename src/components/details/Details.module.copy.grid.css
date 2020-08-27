@@ -1,0 +1,90 @@
+.Details {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    height: 70vh;
+}
+
+@media (max-width:700px) {
+    .Details {
+        flex-direction: column-reverse;
+    }
+    .LeftContainer {
+        width: 100% !important;
+    }
+    .RightContainer {
+        width: 100% !important;
+    }
+}
+
+.LeftContainer {
+    display: grid;
+    /* background-color: rgb(48, 16, 45); */
+    width: 50%;
+    padding: 0 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 50% 24% 24%; */
+    grid-template-rows: repeat(5, 10vw);
+    /* row-gap: 1%; */
+    row-gap: 30px;
+}
+
+.ImageContainer {
+    /* width: 100%; */
+}
+
+.ImageContainer img {
+    /* width: 10%; */
+    /* background-size: cover; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* background-size: auto; */
+    /* justify-self: start; */
+}
+
+.ImageContainer1 {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.ImageContainer2 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+}
+
+.ImageContainer3 {
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+}
+
+/* Mobile */
+
+.ImageContainer4 {
+    /* grid-column-start: 1; */
+    grid-column: 1 / 1.5;
+    grid-row: 4/span 2;
+}
+
+.ImageContainer5 {
+    grid-column-start: 2;
+    grid-row: 4/span 2;
+}
+
+.ImageContainer6 {
+    grid-column-start: 3;
+    grid-row: 4/span 2;
+}
+
+.ImageContainerMobile {}
+
+.RightContainer {
+    width: 50%;
+    background-color: rgb(67, 114, 155);
+}

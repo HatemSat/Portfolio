@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 
 function ScrollToTop({ history, children }) {
     useEffect(() => {
-      // listen() return a function used to remove the listener :
+        // listen() return a function used to remove the listener :
         const unlisten = history.listen(() => {
             if (window.scrollY > 100) {
                 window.scroll({

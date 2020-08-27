@@ -7,8 +7,6 @@ import Backdrop from '../backdrop/Backdrop'
 
 const HamburgerMenu = (props) => {
 
-    // let HamburgerClasses = props.
-
     return (
         <LanguageContext.Consumer>
             {({ lang, isBurgerOpen, toggleBurger }) => {

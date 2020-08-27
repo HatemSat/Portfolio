@@ -9,18 +9,22 @@ import screenblack from "../../assets/images/stack/screen-black.png";
 import details from "../../assets/images/stack/details.png";
 import detailsblack from "../../assets/images/stack/details-black.png";
 import { Component } from "react";
+import { Link, Switch, Route } from 'react-router-dom'
+import Details from '../details/Details'
 
 class Card extends Component {
+
     constructor(props) {
         super(props);
         this.backdropRef = React.createRef();
     }
+
     enterCardHandler = e => {
         // if (window.innerWidth < 800) {
-        //     console.log('ici');
         //     this.backdropRef.current.classList.add(classes.NoHover)
         // }
     };
+
     leaveCardHandler = e => { };
 
     render() {
@@ -83,17 +87,12 @@ class Card extends Component {
 
                             <div className={classes.Row}>
                                 <div className={classes.Details}>
-                                    <a
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        href={this.props.githublink}>
+                                    <Link test={this.props.githublink} to={`/details/${this.props.name}`}>
                                         <img src={details} alt="Details Icon" />
                                         <p>{lang.projects.card.details}</p>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
-
-
                         </div>
 
                         <div className={classes.MobileIcons}>
@@ -134,3 +133,4 @@ class Card extends Component {
 }
 
 export default Card;
+

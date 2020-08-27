@@ -28,28 +28,32 @@ const Projects = () => {
             {({ lang }) => (
                 <div className={classes.Projects}>
                     <Card
-                        stack={[vue,bulma]}
+                        name="toulousewifi"
+                        stack={[vue, bulma]}
                         gif={toulousewifi}
                         description={lang.projects.toulousewifi.description}
-                        websitelink="http://wifitoulouse.fr"
+                        websitelink="https://wifitoulouse.fr"
                         githublink="https://github.com/HatemSat/toulouse-wifi"></Card>
                     <Card
+                        name="backoffice"
                         stack={[angular, mdb, mongo]}
                         gif={backoffice}
                         description={lang.projects.backoffice.description}
                         websitelink="http://back.hatemsat.fr"
                         githublink="https://github.com/HatemSat/Companify"></Card>
                     <Card
+                        name="snake"
                         stack={[javascript, socket, node, bootstrap]}
                         gif={snake}
                         description={lang.projects.snake.description}
                         websitelink="http://snake.hatemsat.fr"
                         githublink="https://github.com/HatemSat/snakebab"></Card>
                     <Card
+                        name="portfolio"
                         stack={[reactlogo, html, css]}
                         gif={portfolio}
                         description={lang.projects.portfolio.description}
-                        websitelink="http://hatemsat.fr"
+                        websitelink="https://hatemsat.fr"
                         githublink="https://github.com/HatemSat/Portfolio"></Card>
                 </div>
             )}
