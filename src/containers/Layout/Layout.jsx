@@ -43,7 +43,7 @@ export default class Layout extends Component {
         toggleBurger: this.toggleBurger,
         projects: {
             toulousewifi: {
-                name: "toulousewifi",
+                name: "Wifi Toulouse",
                 stack: [{ name: "vue", logo: vue }, { name: "bulma", logo: bulma }],
                 screenshots: [toulousewifi1, toulousewifi2, toulousewifi3, toulousewifi4, toulousewifi5, toulousewifi6],
                 gif: { toulousewifi },
